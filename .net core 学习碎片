@@ -1,0 +1,118 @@
+
+
+
+.NET Core
+	1.Windows Store App Model     ASP.NET5 App Model
+	
+	2.Unified BCL
+	
+	3.Runtime Adaption Layer
+	
+	4..NET Native Runtime         CoreCLR
+	
+	
+	
+	1. Runtime
+	
+		在.NET Core 中有实现两种RunTime，NativeRuntime 和 CoreCLR。NativeRuntime 将C# 或 VB.net 代码直接转换为原生机器码。
+		而CoreCLR是一个开源的JIT运行时，会将代码编译成中间语言（IL）在最终运行时再转换机器码。
+	
+	2. Unified BCL
+
+		Base Classlibrary即基础类，例如 FileSystem、Console、XML操作等。
+		
+	3. Windows Store AppModel & ASP.NET Core 1.0
+
+		提供开发Windows系统的各种触屏设备和ASP.NET程序的一组基础库。
+		
+	父亲：.NET Standard Library
+	
+	皇后：Windows系统-.NET Framework----废太子-----ASP.NET Core On .NET Framework
+	
+	熹贵妃：跨操作系统-.NET Core--------太子-------ASP.NET Core On .NET Core
+	
+	--------------------------------------------------------------我是分割线------------------------------------------------------------------------------
+	
+	1 .NET Core & .NET Framework
+
+		.NET Core & .NET Framework 都是 NET Standard Library 的实现，一种是跨平台，而另一种是Windows下特有的，除实现NET Standard Library外 .NET Core 和 .NET Framework 都有各自特有的实现。
+		
+		.NET Standard Library 是跨操作系统的关键所在，它定义了一组接口，而每个操作系统有各自的实现，.NET Core通过nuget可以动态下载当前操作系统的实现，从而实现跨操作系统（暨跨操作系统共享代码）。
+
+		.NET Core 更依赖于Nuget,允许本地application在部署时动态下载需要的class library。而.NET Framework需要在系统中预装。这样.NET Core的部署比.NET Framework 更简单快速同样也更轻便。
+	
+	
+	--------------------------------------------------------------我是分割线------------------------------------------------------------------------------
+	
+	.NET Core框架的构成和各模块主要功能，以及如何实现跨平台。
+	
+		ASP.NET Core  			UMP
+			.NET Standard Library
+				CoreFX
+		Core CLR				Core RT
+			NET Compiler Platform:Roslyn
+	
+	
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
