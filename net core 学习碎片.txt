@@ -1,0 +1,122 @@
+		对于.NET开发人员来说，我们已经习惯了VS这个世界上最强大的IDE，所以对他们来说，项目的创建直接利用安装到VS中相应的项目模板即可。当.NET Core跨出了Windows的围栏，正式拥抱其他平台，意味着VS已经不再是唯一的IDE。于此同时，.NETCore充分借鉴了目前非常流行的基于“脚手架（Scaffolding）”的源文件生成方式，在它的核心命令行“dotnet”也添加了脚手架的命令行开关。除此之外，.NET Core真正对社区敞开胸怀，我们可以直接利用现有的脚手架工具Yeoman来生成.NET Core项目。接下来我们就来介绍一下两种生成.NET Core项目的方式。
+		
+		说白了，就是像ionic,angular,nodejs,android,cordova一样，可以用命令行来生成项目。
+		
+		1、命令行创建.net core 项目
+			记不住命令没关系，
+			
+			dotnet --help  
+			dotnet --new  
+			dotnet new --help
+			
+		2、命令:
+			>f:
+			>mkdir netcoredemo
+			>cd netcoredemo
+			>dotnet new mvc 
+		
+		3、被创建出来的这个Web应用实际上是一个ASP.NET Core MVC项目，如下图所示，它具有一个完整的目录结构。
+		
+		4、在执行dotnet new mvc,会自动执行“dotnet restore”命令恢复依赖的NuGet包之后，
+		    我们可以直接执行“dotnet run”启动这个MVC应用。
+			接2中命令
+			>dotnet run
+			
+--------------------------------------------.net core 与framework的关系
+至2002微软公司推出.NET平台已近15年，在互联网快速迭代的浪潮中，许多语言已被淘汰，同时也有更多新的语言涌现，但 .Net 依然坚挺的站在系统开发平台的一线阵营中，并且随着.NET Core 即将到来(2016年6月27日)的正式版，势必迎来新一轮春天。
+
+2002年-第一个.NET框架————.NET Framework
+		.NET Compact Framework 用于在较小的移动设备（Windows mobile）
+		.NET Compact Framework 也含有一套 类似.NET Framework 体系（Runtime, Framework,Application Model），它是一个复制精简版的 .NET Framework。
+
+在数年间微软乐此不疲的推出了数个类似 .NET Framework的框架，以用于在不同的设备和平台上运行。每个Framework都有类似的体系但又不完全相同的，这样Framework越来越多，对开发者来说不一样的设备即便功能相同也需要维护多套代码，增加了开发的复杂度。
+
+
+微软对这些问题的重新思考和改进让.NET Core横空出世。
+.NET Core是一个开源的模块化的Framework，不管是开发web或移动设备都在同一个Framework（.NET Core）下运行，而且 .NET Core也可在不同的操作系统上运行，包括Windows、linux、MacOS，实现了跨平台跨设备。
+更棒的是.NET Core 在发布程序时不用事先安装Framework而是通过Nuget下载，这样在初次部署时就不用安装一个复杂而庞大Framework，而是按需下载。这种基于Nuget的按需加载铸就了.NET Core 跨平台。
+
+
+
+
+
+----------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

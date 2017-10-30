@@ -1,0 +1,17 @@
+1.Tomcat-解压
+	创建环境变量指向上述解压目录
+	启动Tomcat-%CATALINA_HOME%\bin\startup.bat
+	http://localhost:8080/
+	关闭Tomcat-%CATALINA_HOME%\bin\shutdown.bat
+	
+2.JDK环境配置
+	变量名：JAVA_HOME
+    变量值：C:\Program Files (x86)\Java\jdk1.8.0_91        // 要根据自己的实际路径配置
+
+    变量名：CLASSPATH
+    变量值：.;%JAVA_HOME%\lib\dt.jar;%JAVA_HOME%\lib\tools.jar;         //记得前面有个"."
+
+    变量名：Path
+    变量值：%JAVA_HOME%\bin;%JAVA_HOME%\jre\bin;
+	
+3.python 可以配置 也可以不配置 无所谓的，反正要用pycharm,pycharm解释器配置进去

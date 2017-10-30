@@ -1,0 +1,30 @@
+ MVC项目初次发布到IIS可能会遇到的问题
+
+MVC4 + .NET Framework 4.5 +Windows Server 2008+ IIS7.5 + 4.0集成模式池 ,初次发布后可能会遇到404.0 或者403.14错误，加入以下代码可以解决此问题。
+
+<configuration> 
+<system.webServer>
+    <modules runAllManagedModulesForAllRequests="true" />
+  </system.webServer>
+</configuration>
+
+另外,如果提示“若要针对 .NET Framework 4.0 或更高版本进行编译，则提供程序选项中“compilerVersion”特性的值必须为“v4.0”或更高版本”错误，需要加上下面这段代码。
+复制代码
+
+<configuration>
+
+<system.codedom>
+    <compilers>
+      <compiler language="c#;cs;csharp" extension=".cs" type="Microsoft.CSharp.CSharpCodeProvider,System, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" warningLevel="4">
+        <providerOption name="CompilerVersion" value="v4.0"/>
+        <providerOption name="WarnAsError" value="false"/>
+      </compiler>
+      <compiler language="vb;vbs;visualbasic;vbscript" extension=".vb" type="Microsoft.VisualBasic.VBCodeProvider, System, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" warningLevel="4">
+        <providerOption name="CompilerVersion" value="v4.0"/>
+        <providerOption name="OptionInfer" value="true"/>
+        <providerOption name="WarnAsError" value="false"/>
+      </compiler>
+    </compilers>
+  </system.codedom>
+
+</configuration>
