@@ -1,0 +1,12 @@
+E:\aspnetcoreapp
+--output-path=obj\Debug\netcoreapp2.0\
+--application-name=aspnetcoreapp
+--content-root=E:\aspnetcoreapp
+--file=E:\aspnetcoreapp\Views\Home\About.cshtml
+--file=E:\aspnetcoreapp\Views\Home\Contact.cshtml
+--file=E:\aspnetcoreapp\Views\Home\Index.cshtml
+--file=E:\aspnetcoreapp\Views\Shared\Error.cshtml
+--file=E:\aspnetcoreapp\Views\Shared\_Layout.cshtml
+--file=E:\aspnetcoreapp\Views\Shared\_ValidationScriptsPartial.cshtml
+--file=E:\aspnetcoreapp\Views\_ViewImports.cshtml
+--file=E:\aspnetcoreapp\Views\_ViewStart.cshtml
